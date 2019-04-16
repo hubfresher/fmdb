@@ -40,6 +40,7 @@ Pod::Spec.new do |s|
 
   # use SQLCipher and enable -DSQLITE_HAS_CODEC flag
   s.subspec 'SQLCipher' do |ss|
+    ss.version = '3.4.2'
     ss.dependency 'SQLCipher'
     ss.source_files = 'src/fmdb/FM*.{h,m}'
     ss.exclude_files = 'src/fmdb.m'
